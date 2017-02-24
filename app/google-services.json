@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "251988864250",
+    "firebase_url": "https://thinkspeak-7e75c.firebaseio.com",
+    "project_id": "thinkspeak-7e75c",
+    "storage_bucket": "thinkspeak-7e75c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251988864250:android:180e4870fa9efef3",
+        "android_client_info": {
+          "package_name": "com.example.root.thinkspeak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251988864250-0m67nqpc5ovr5d41npvltf9sk1movsa9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.thinkspeak",
+            "certificate_hash": "183f7c9bdcb1a383d15c1132817a51a7335e9f00"
+          }
+        },
+        {
+          "client_id": "251988864250-6e05abgr8fnuq4b5l99aqv0d42q54moh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrDt4QIXDBapQUqtD4uKW05_DBtf2P_1w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251988864250-6e05abgr8fnuq4b5l99aqv0d42q54moh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
