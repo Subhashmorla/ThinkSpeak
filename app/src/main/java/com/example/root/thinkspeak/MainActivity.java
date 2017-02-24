@@ -61,8 +61,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void populateList() {
+        String BASE_URI="https://thinkspeak-7e75c.firebaseio.com/Users"+"/"+mAuth.getCurrentUser().getUid()+"/"+"Channels";
 
-        DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReferenceFromUrl("https://thinkspeak-7e75c.firebaseio.com/Users");
+
+        DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReferenceFromUrl(BASE_URI);
         FirebaseListAdapter<String> firebaseListAdapter=new FirebaseListAdapter<String>(this,
                 String.class,android.R.layout.simple_expandable_list_item_1,databaseReference) {
             @Override
