@@ -11,21 +11,30 @@
     tools:context="com.example.root.thinkspeak.ChannelActivity">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/channel_name_edit_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Give a name for channel" />
+
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
         android:id="@+id/addchannelid_edittext"
-        android:layout_alignParentEnd="true"
         android:hint="Add Channel ID..."
-        android:inputType="number" />
+        android:layout_below="@+id/channel_name_edit_text"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/addchannel_button"
+        android:layout_marginTop="24dp"
         android:layout_below="@+id/addchannelid_edittext"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

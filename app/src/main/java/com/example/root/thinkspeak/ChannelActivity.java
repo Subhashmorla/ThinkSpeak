@@ -16,6 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class ChannelActivity extends AppCompatActivity {
     private EditText mAddChannelId;
+    private EditText mChannelName;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
 
@@ -26,12 +27,13 @@ public class ChannelActivity extends AppCompatActivity {
         setContentView(R.layout.activity_channel);
 
         mAuth=FirebaseAuth.getInstance();
-        String BASE_URI="https://thinkspeak-7e75c.firebaseio.com/Users/6ZRArtCpiUNBDMUr6vQcDHwhhXn1/Channels";
+        String BASE_URI="https://thinkspeak-7e75c.firebaseio.com/Users"+"/"+mAuth.getCurrentUser().getUid()+"/"+"Channels";
 
         mDatabase=FirebaseDatabase.getInstance().getReferenceFromUrl(BASE_URI);
 
 
         mAddChannelId = (EditText) findViewById(R.id.addchannelid_edittext);
+        mChannelName= (EditText) findViewById(R.id.channel_name_edit_text);
         Button addButton= (Button) findViewById(R.id.addchannel_button);
 
         addButton.setOnClickListener(new View.OnClickListener() {
@@ -44,10 +46,11 @@ public class ChannelActivity extends AppCompatActivity {
 
     private void addChannel() {
         String channelId= mAddChannelId.getText().toString();
+        String channelName=mChannelName.getText().toString();
         if (channelId != null){
 
-            
-            DatabaseReference current=mDatabase.child("channel");
+            Toast.makeText(this,"Working"+"channelId",Toast.LENGTH_SHORT).show();
+            DatabaseReference current=mDatabase.child(channelName);
             current.setValue(channelId);
             finish();
 

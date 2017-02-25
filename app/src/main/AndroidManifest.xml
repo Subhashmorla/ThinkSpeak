@@ -22,7 +22,9 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".ChannelActivity"></activity>
+        <activity android:name=".ChannelActivity" />
+        <activity android:name=".FieldActivity" />
+        <activity android:name=".GraphActivity"></activity>
     </application>
 
 </manifest>
