@@ -1,11 +1,15 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/com_facebook_button_send_background_color_pressed</item>
+        <item name="colorPrimaryDark">#1565c0</item>
+        <item name="colorAccent">@color/com_facebook_messenger_blue</item>
+    </style>
+
+    <style name="Mytheme" parent="Theme.AppCompat.NoActionBar" >
+        <item name="colorAccent">@color/com_facebook_messenger_blue</item>
     </style>
 
 </resources>

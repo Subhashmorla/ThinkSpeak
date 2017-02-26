@@ -10,11 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.root.thinkspeak.FieldActivity">
 
+    <TextView
+        android:text="FIELDS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
     <GridView
         android:layout_width="match_parent"
+        android:layout_below="@+id/textView2"
         android:layout_height="match_parent"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
         android:columnWidth="90dp"
         android:numColumns="2"
         android:verticalSpacing="10dp"
@@ -23,5 +29,6 @@
         android:gravity="center"
 
         android:id="@+id/grid_view"
-        android:elevation="1dp" />
+        android:elevation="1dp"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
